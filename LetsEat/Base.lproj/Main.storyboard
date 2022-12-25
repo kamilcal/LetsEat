@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Ly4-4B-XFf">
             <objects>
-                <viewController id="eGT-IQ-Bfi" sceneMemberID="viewController">
+                <viewController id="eGT-IQ-Bfi" customClass="MapViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzB-UN-gDL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="er7-Cn-TLj"/>
+                    <connections>
+                        <outlet property="mapView" destination="948-4h-0p6" id="Unz-v5-MAU"/>
+                        <segue destination="Wj3-VY-pYk" kind="show" identifier="showDetail" id="2aD-oV-kgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnH-gY-Opy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="221" y="431"/>
+        </scene>
+        <!--RestaurantDetail-->
+        <scene sceneID="ACm-Gq-6cZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RestaurantDetail" id="Wj3-VY-pYk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Pku-7s-uLS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cl1-QH-JKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="424"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="ZJf-nA-Xtp">
@@ -494,7 +508,7 @@
                     <navigationItem key="navigationItem" id="Wns-uk-RXG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dVf-ao-u6R">
                             <connections>
-                                <segue destination="DcD-st-KOt" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="4cS-O8-V3X"/>
+                                <segue destination="DcD-st-KOt" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="6IU-xj-SAz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="bfm-2W-XEA"/>

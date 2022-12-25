@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestaurantListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class RestaurantListViewController: UIViewController, UICollectionViewDelegate {
     
     
    
@@ -18,6 +18,19 @@ class RestaurantListViewController: UIViewController, UICollectionViewDelegate, 
         super.viewDidLoad()
 
      }
+    
+    
+}
+
+//MARK: - Private Extension
+
+private extension RestaurantListViewController {
+    
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension RestaurantListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         1

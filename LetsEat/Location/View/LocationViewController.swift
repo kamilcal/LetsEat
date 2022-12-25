@@ -15,13 +15,22 @@ class LocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manager.fetch()
+        initialize()
     }
     
 
 }
 
-extension LocationViewController: UITableViewDataSource, UITableViewDelegate {
+//MARK: - Private Extension
+
+private extension LocationViewController {
+    func initialize() {
+        manager.fetch()
+    }
+}
+//MARK: - UICollectionViewDataSource
+
+extension LocationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         manager.numberOfLocationItem()
