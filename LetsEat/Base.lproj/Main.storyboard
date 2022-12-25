@@ -446,10 +446,10 @@
             </objects>
             <point key="canvasLocation" x="2663" y="-38"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="qOh-Td-kGC">
             <objects>
-                <viewController id="2fr-pq-IMw" sceneMemberID="viewController">
+                <viewController id="2fr-pq-IMw" customClass="LocationViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a3r-y3-MYl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,6 +476,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2fr-pq-IMw" id="2V5-aM-t41"/>
+                                    <outlet property="delegate" destination="2fr-pq-IMw" id="uj2-ki-5hN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D9N-zK-jSg"/>
@@ -495,6 +499,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="bfm-2W-XEA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5B3-l3-Uww" id="0MS-8R-XBK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYx-AH-hES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="DcD-st-KOt" userLabel="Exit" sceneMemberID="exit"/>

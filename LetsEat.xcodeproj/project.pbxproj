@@ -18,6 +18,9 @@
 		D225082E29586DD000E6D9BA /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225082D29586DD000E6D9BA /* ExploreItem.swift */; };
 		D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225082F29586F0000E6D9BA /* ExploreDataManager.swift */; };
 		D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22508322958774B00E6D9BA /* ExploreCell.swift */; };
+		D22508382958840100E6D9BA /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22508372958840100E6D9BA /* LocationViewController.swift */; };
+		D225083A295885B600E6D9BA /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2250839295885B600E6D9BA /* Locations.plist */; };
+		D225083C295886E000E6D9BA /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225083B295886E000E6D9BA /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		D225082D29586DD000E6D9BA /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		D225082F29586F0000E6D9BA /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		D22508322958774B00E6D9BA /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		D22508372958840100E6D9BA /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D2250839295885B600E6D9BA /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		D225083B295886E000E6D9BA /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 				D21907142953C5B9004CE189 /* LaunchScreen.storyboard */,
 				D219071F2957974A004CE189 /* Assets.xcassets */,
 				D21907172953C5B9004CE189 /* Info.plist */,
+				D22508342958838400E6D9BA /* Location */,
 				D22508272957A28700E6D9BA /* Restaurants */,
 				D219072129579A20004CE189 /* Explore */,
 			);
@@ -112,6 +119,32 @@
 				D22508322958774B00E6D9BA /* ExploreCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D22508342958838400E6D9BA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D2250836295883A000E6D9BA /* Model */,
+				D22508352958838E00E6D9BA /* View */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		D22508352958838E00E6D9BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D22508372958840100E6D9BA /* LocationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2250836295883A000E6D9BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2250839295885B600E6D9BA /* Locations.plist */,
+				D225083B295886E000E6D9BA /* LocationDataManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +208,7 @@
 				D225082C29586D9500E6D9BA /* ExploreData.plist in Resources */,
 				D21907162953C5B9004CE189 /* LaunchScreen.storyboard in Resources */,
 				D21907202957974A004CE189 /* Assets.xcassets in Resources */,
+				D225083A295885B600E6D9BA /* Locations.plist in Resources */,
 				D21907112953C5B8004CE189 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +227,8 @@
 				D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */,
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
 				D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */,
+				D225083C295886E000E6D9BA /* LocationDataManager.swift in Sources */,
+				D22508382958840100E6D9BA /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
