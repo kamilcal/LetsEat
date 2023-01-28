@@ -51,6 +51,7 @@
 		D2501751295B20AF00FB5818 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2501750295B20AF00FB5818 /* RestaurantCell.swift */; };
 		D2501754295B290300FB5818 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2501753295B290300FB5818 /* NoDataView.swift */; };
 		D2501756295B295A00FB5818 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2501755295B295A00FB5818 /* NoDataView.xib */; };
+		D2A71C3E2985D2E20007E158 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A71C3D2985D2E20007E158 /* RatingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		D2501750295B20AF00FB5818 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		D2501753295B290300FB5818 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		D2501755295B295A00FB5818 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
+		D2A71C3D2985D2E20007E158 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				D225084F2958C17300E6D9BA /* ReviewForm.storyboard */,
+				D2A71C3D2985D2E20007E158 /* RatingsView.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D250174C2959CC2C00FB5818 /* LocationItem.swift in Sources */,
+				D2A71C3E2985D2E20007E158 /* RatingsView.swift in Sources */,
 				D250174E2959D9B900FB5818 /* ExploreHeaderView.swift in Sources */,
 				D225082E29586DD000E6D9BA /* ExploreItem.swift in Sources */,
 				D22508472958A78B00E6D9BA /* DataManager.swift in Sources */,

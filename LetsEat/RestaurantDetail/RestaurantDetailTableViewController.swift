@@ -20,6 +20,7 @@ class RestaurantDetailTableViewController: UITableViewController {
     @IBOutlet var tableDetailsLabel: UILabel!
     // Cell Three
     @IBOutlet var overralRatingLabel: UILabel!
+    @IBOutlet var ratingsView: RatingsView!
     // Cell Eight
     @IBOutlet var adressLabel: UILabel!
     // Cell Nine
@@ -41,8 +42,11 @@ private extension RestaurantDetailTableViewController {
     func initialize(){
         setupLabels()
         createMap()
+        createRating()
     }
-    
+    func createRating(){
+        ratingsView.rating = 3.5
+    }
     func setupLabels(){
         guard let restaurant = selectedRestaurant else { return }
         title = restaurant.name
