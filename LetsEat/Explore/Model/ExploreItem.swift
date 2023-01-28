@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ExploreItem {
+struct ExploreItem: Equatable {
     
     let name: String?
     let image: String?

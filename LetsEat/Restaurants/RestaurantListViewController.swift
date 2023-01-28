@@ -74,6 +74,7 @@ extension RestaurantListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath) as! RestaurantCell
         let restaurantItem = manager.restaurantItem(at: indexPath.row)
+        cell.titleLabel.text = restaurantItem.name
         if let cuisine = restaurantItem.subtitle {
             cell.cuisineLabel.text = cuisine
         }

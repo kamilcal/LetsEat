@@ -25,7 +25,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate {
         case Segue.locationList.rawValue :
             showLocationList(segue: segue)
         case Segue.restaurantList.rawValue :
-            showLocationList(segue: segue)
+            showRestaurantList(segue: segue)
         default :
             print("segue not added")
         }

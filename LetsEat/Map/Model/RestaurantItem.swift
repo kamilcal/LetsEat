@@ -9,9 +9,8 @@ import UIKit
 import MapKit
 
 
-class RestaurantItem: NSObject, MKAnnotation, Codable {
+class RestaurantItem: NSObject, MKAnnotation, Decodable {
     
-
     let name: String?
     let cuisines: [String]
     let lat: Double?
@@ -22,9 +21,7 @@ class RestaurantItem: NSObject, MKAnnotation, Codable {
     let imageURL: String?
     let restaurantID: Int?
     
-    
-  
-    enum codingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case name
         case cuisines
         case lat

@@ -30,6 +30,7 @@ class NoDataView: UIView {
         let view = nib.instantiate(withOwner: self, options: nil) [0] as! UIView
         return view
     }
+//    Bu yöntem, uygulama paketinden NoDataView XIB dosyasını bulur ve yükler ve içinde depolanan bir UIView örneği döndürür.
     
     func setupView(){
         view = loadViewFromNib()
