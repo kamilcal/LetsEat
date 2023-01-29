@@ -46,6 +46,7 @@ private extension RestaurantDetailTableViewController {
     }
     func createRating(){
         ratingsView.rating = 3.5
+        ratingsView.isEnabled = true
     }
     func setupLabels(){
         guard let restaurant = selectedRestaurant else { return }

@@ -15,7 +15,11 @@ class RatingsView: UIControl {
     private let emptyStarImage = UIImage(named: "empty-star")
     
     private var totalStar = 5
-    var rating = 0.0
+    var rating = 0.0{
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext() //Bunu, UI öğelerini birlikte oluşturacağınız bir eskiz defteri gibi düşünebilirsiniz.
@@ -42,6 +46,39 @@ class RatingsView: UIControl {
                 starToDraw = emptyStarImage
             }
             starToDraw.draw(in: frame)
+        }
+    }
+    
+    override var canBecomeFirstResponder: Bool{
+        true
+    }
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        guard self.isEnabled else {
+            return false
+        }
+        super.beginTracking(touch, with: event)
+        handle(with: touch)
+        return true
+    }
+}
+
+private extension RatingsView{
+    func handle(with touch: UITouch){
+        let startRectWidth = self.bounds.size.width / Double(totalStar)
+        let location = touch.location(in: self)
+        
+        var value = location.x / startRectWidth
+        if (value + 0.5) < value.rounded(.up) {
+            value = floor(value) + 0.5
+        } else {
+            value = value.rounded(.up)
+        }
+        updateRating(with: value)
+    }
+    
+    func updateRating(with newValue: Double) {
+        if (self.rating != newValue && newValue >= 0 && newValue <= Double(totalStar)){
+            self.rating = newValue
         }
     }
 }
