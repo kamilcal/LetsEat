@@ -44,6 +44,11 @@ private extension RestaurantDetailTableViewController {
         createMap()
         createRating()
     }
+    
+    @IBAction func unwindReviewCancel(segue: UIStoryboardSegue){
+        
+    }
+    
     func createRating(){
         ratingsView.rating = 3.5
         ratingsView.isEnabled = true

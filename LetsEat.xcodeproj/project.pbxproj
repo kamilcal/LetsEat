@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203593B2987069100008FCB /* ReviewFormViewController.swift */; };
 		D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21907092953C5B8004CE189 /* AppDelegate.swift */; };
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D203593B2987069100008FCB /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		D21907062953C5B8004CE189 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21907092953C5B8004CE189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D219070B2953C5B8004CE189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			children = (
 				D225084F2958C17300E6D9BA /* ReviewForm.storyboard */,
 				D2A71C3D2985D2E20007E158 /* RatingsView.swift */,
+				D203593B2987069100008FCB /* ReviewFormViewController.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */,
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
 				D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */,
+				D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */,
 				D225084229589D0900E6D9BA /* RestaurantItem.swift in Sources */,
 				D225083C295886E000E6D9BA /* LocationDataManager.swift in Sources */,
 				D22508382958840100E6D9BA /* LocationViewController.swift in Sources */,
