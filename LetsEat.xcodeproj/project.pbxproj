@@ -10,6 +10,9 @@
 		D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203593B2987069100008FCB /* ReviewFormViewController.swift */; };
 		D20BCB4F29883B4400244492 /* FilterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20BCB4E29883B4400244492 /* FilterData.plist */; };
 		D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5129883B8A00244492 /* FilterItem.swift */; };
+		D20BCB5429883BDF00244492 /* FilterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5329883BDF00244492 /* FilterDataManager.swift */; };
+		D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5529883C4700244492 /* ImageFiltering.swift */; };
+		D20BCB5829883C7600244492 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5729883C7600244492 /* FilterCell.swift */; };
 		D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21907092953C5B8004CE189 /* AppDelegate.swift */; };
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 		D203593B2987069100008FCB /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		D20BCB4E29883B4400244492 /* FilterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FilterData.plist; sourceTree = "<group>"; };
 		D20BCB5129883B8A00244492 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		D20BCB5329883BDF00244492 /* FilterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataManager.swift; sourceTree = "<group>"; };
+		D20BCB5529883C4700244492 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
+		D20BCB5729883C7600244492 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		D21907062953C5B8004CE189 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21907092953C5B8004CE189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D219070B2953C5B8004CE189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 			children = (
 				D20BCB4E29883B4400244492 /* FilterData.plist */,
 				D20BCB5129883B8A00244492 /* FilterItem.swift */,
+				D20BCB5329883BDF00244492 /* FilterDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +294,8 @@
 			children = (
 				D20BCB5029883B5200244492 /* Model */,
 				D225084D2958C16800E6D9BA /* PhotoFilter.storyboard */,
+				D20BCB5529883C4700244492 /* ImageFiltering.swift */,
+				D20BCB5729883C7600244492 /* FilterCell.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -435,6 +444,8 @@
 				D250174E2959D9B900FB5818 /* ExploreHeaderView.swift in Sources */,
 				D225082E29586DD000E6D9BA /* ExploreItem.swift in Sources */,
 				D22508472958A78B00E6D9BA /* DataManager.swift in Sources */,
+				D20BCB5829883C7600244492 /* FilterCell.swift in Sources */,
+				D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */,
 				D22508442958A0E800E6D9BA /* MapDataManager.swift in Sources */,
 				D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */,
 				D250174A2959BAD100FB5818 /* RestaurantDataManager.swift in Sources */,
@@ -443,6 +454,7 @@
 				D2501751295B20AF00FB5818 /* RestaurantCell.swift in Sources */,
 				D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */,
 				D22508492958AB3800E6D9BA /* MapViewController.swift in Sources */,
+				D20BCB5429883BDF00244492 /* FilterDataManager.swift in Sources */,
 				D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */,
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
 				D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */,

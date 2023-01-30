@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="woO-nh-Z4L">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filterCell" id="woO-nh-Z4L" customClass="FilterCell" customModule="LetsEat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="116" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -64,6 +64,10 @@
                                             <constraint firstItem="ElC-Mf-BBR" firstAttribute="leading" secondItem="woO-nh-Z4L" secondAttribute="leading" id="gWJ-Cb-AJS"/>
                                             <constraint firstAttribute="trailing" secondItem="ElC-Mf-BBR" secondAttribute="trailing" id="kvs-m5-jNJ"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="ElC-Mf-BBR" id="EO6-dF-HZ9"/>
+                                            <outlet property="titleLabel" destination="vM6-ok-5gG" id="eyC-tN-vz7"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
