@@ -13,6 +13,7 @@
 		D20BCB5429883BDF00244492 /* FilterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5329883BDF00244492 /* FilterDataManager.swift */; };
 		D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5529883C4700244492 /* ImageFiltering.swift */; };
 		D20BCB5829883C7600244492 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5729883C7600244492 /* FilterCell.swift */; };
+		D20BCB5A29883D9A00244492 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5929883D9A00244492 /* PhotoFilterViewController.swift */; };
 		D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21907092953C5B8004CE189 /* AppDelegate.swift */; };
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		D20BCB5329883BDF00244492 /* FilterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataManager.swift; sourceTree = "<group>"; };
 		D20BCB5529883C4700244492 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 		D20BCB5729883C7600244492 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		D20BCB5929883D9A00244492 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 		D21907062953C5B8004CE189 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21907092953C5B8004CE189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D219070B2953C5B8004CE189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				D225084D2958C16800E6D9BA /* PhotoFilter.storyboard */,
 				D20BCB5529883C4700244492 /* ImageFiltering.swift */,
 				D20BCB5729883C7600244492 /* FilterCell.swift */,
+				D20BCB5929883D9A00244492 /* PhotoFilterViewController.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				D250174E2959D9B900FB5818 /* ExploreHeaderView.swift in Sources */,
 				D225082E29586DD000E6D9BA /* ExploreItem.swift in Sources */,
 				D22508472958A78B00E6D9BA /* DataManager.swift in Sources */,
+				D20BCB5A29883D9A00244492 /* PhotoFilterViewController.swift in Sources */,
 				D20BCB5829883C7600244492 /* FilterCell.swift in Sources */,
 				D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */,
 				D22508442958A0E800E6D9BA /* MapDataManager.swift in Sources */,
