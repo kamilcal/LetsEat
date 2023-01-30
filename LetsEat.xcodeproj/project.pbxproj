@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203593B2987069100008FCB /* ReviewFormViewController.swift */; };
+		D20BCB4F29883B4400244492 /* FilterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20BCB4E29883B4400244492 /* FilterData.plist */; };
+		D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5129883B8A00244492 /* FilterItem.swift */; };
 		D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21907092953C5B8004CE189 /* AppDelegate.swift */; };
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		D203593B2987069100008FCB /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
+		D20BCB4E29883B4400244492 /* FilterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FilterData.plist; sourceTree = "<group>"; };
+		D20BCB5129883B8A00244492 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
 		D21907062953C5B8004CE189 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21907092953C5B8004CE189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D219070B2953C5B8004CE189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20BCB5029883B5200244492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D20BCB4E29883B4400244492 /* FilterData.plist */,
+				D20BCB5129883B8A00244492 /* FilterItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D21906FD2953C5B8004CE189 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +285,7 @@
 		D225084C2958C14400E6D9BA /* PhotoFilter */ = {
 			isa = PBXGroup;
 			children = (
+				D20BCB5029883B5200244492 /* Model */,
 				D225084D2958C16800E6D9BA /* PhotoFilter.storyboard */,
 			);
 			path = PhotoFilter;
@@ -398,6 +412,7 @@
 				D225084029589CC100E6D9BA /* MapLocations.plist in Resources */,
 				D25017472959B90100FB5818 /* New York.json in Resources */,
 				D25017422959B90100FB5818 /* Charleston.json in Resources */,
+				D20BCB4F29883B4400244492 /* FilterData.plist in Resources */,
 				D25017442959B90100FB5818 /* Chicago.json in Resources */,
 				D25017402959B90100FB5818 /* Las Vegas.json in Resources */,
 				D25017412959B90100FB5818 /* San Antonio.json in Resources */,
@@ -430,6 +445,7 @@
 				D22508492958AB3800E6D9BA /* MapViewController.swift in Sources */,
 				D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */,
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
+				D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */,
 				D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */,
 				D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */,
 				D225084229589D0900E6D9BA /* RestaurantItem.swift in Sources */,
