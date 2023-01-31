@@ -62,6 +62,7 @@
 		D2501754295B290300FB5818 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2501753295B290300FB5818 /* NoDataView.swift */; };
 		D2501756295B295A00FB5818 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2501755295B295A00FB5818 /* NoDataView.xib */; };
 		D2A71C3E2985D2E20007E158 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A71C3D2985D2E20007E158 /* RatingsView.swift */; };
+		D2D5AF292989A2C100C54FB2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5AF282989A2C100C54FB2 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		D2501753295B290300FB5818 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		D2501755295B295A00FB5818 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		D2A71C3D2985D2E20007E158 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		D2D5AF282989A2C100C54FB2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				D20BCB5C29889F7A00244492 /* LetsEatModel.xcdatamodeld */,
+				D2D5AF282989A2C100C54FB2 /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				D22508442958A0E800E6D9BA /* MapDataManager.swift in Sources */,
 				D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */,
 				D250174A2959BAD100FB5818 /* RestaurantDataManager.swift in Sources */,
+				D2D5AF292989A2C100C54FB2 /* CoreDataManager.swift in Sources */,
 				D22508292957A2C900E6D9BA /* RestaurantListViewController.swift in Sources */,
 				D22508562958C3B300E6D9BA /* Segue.swift in Sources */,
 				D2501751295B20AF00FB5818 /* RestaurantCell.swift in Sources */,
