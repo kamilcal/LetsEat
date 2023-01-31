@@ -14,6 +14,9 @@
 		D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5529883C4700244492 /* ImageFiltering.swift */; };
 		D20BCB5829883C7600244492 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5729883C7600244492 /* FilterCell.swift */; };
 		D20BCB5A29883D9A00244492 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5929883D9A00244492 /* PhotoFilterViewController.swift */; };
+		D20BCB5E29889F7A00244492 /* LetsEatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB5C29889F7A00244492 /* LetsEatModel.xcdatamodeld */; };
+		D20BCB612988A24100244492 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB602988A24100244492 /* ReviewItem.swift */; };
+		D20BCB632988A89900244492 /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCB622988A89900244492 /* RestaurantPhotoItem.swift */; };
 		D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21907092953C5B8004CE189 /* AppDelegate.swift */; };
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		D20BCB5529883C4700244492 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 		D20BCB5729883C7600244492 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		D20BCB5929883D9A00244492 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
+		D20BCB5D29889F7A00244492 /* LetsEatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsEatModel.xcdatamodel; sourceTree = "<group>"; };
+		D20BCB602988A24100244492 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		D20BCB622988A89900244492 /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
 		D21907062953C5B8004CE189 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21907092953C5B8004CE189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D219070B2953C5B8004CE189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +141,23 @@
 				D20BCB4E29883B4400244492 /* FilterData.plist */,
 				D20BCB5129883B8A00244492 /* FilterItem.swift */,
 				D20BCB5329883BDF00244492 /* FilterDataManager.swift */,
+				D20BCB622988A89900244492 /* RestaurantPhotoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20BCB5B29889F5400244492 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D20BCB5C29889F7A00244492 /* LetsEatModel.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		D20BCB5F2988A22100244492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D20BCB602988A24100244492 /* ReviewItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +287,7 @@
 		D22508452958A77100E6D9BA /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				D20BCB5B29889F5400244492 /* Core Data */,
 				D2501752295B28DC00FB5818 /* No Data */,
 				D250172B2959B8C700FB5818 /* JSON */,
 				D22508462958A78B00E6D9BA /* DataManager.swift */,
@@ -284,6 +308,7 @@
 		D225084B2958C13600E6D9BA /* ReviewForm */ = {
 			isa = PBXGroup;
 			children = (
+				D20BCB5F2988A22100244492 /* Model */,
 				D225084F2958C17300E6D9BA /* ReviewForm.storyboard */,
 				D2A71C3D2985D2E20007E158 /* RatingsView.swift */,
 				D203593B2987069100008FCB /* ReviewFormViewController.swift */,
@@ -458,14 +483,17 @@
 				D2501751295B20AF00FB5818 /* RestaurantCell.swift in Sources */,
 				D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */,
 				D22508492958AB3800E6D9BA /* MapViewController.swift in Sources */,
+				D20BCB612988A24100244492 /* ReviewItem.swift in Sources */,
 				D20BCB5429883BDF00244492 /* FilterDataManager.swift in Sources */,
 				D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */,
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
+				D20BCB632988A89900244492 /* RestaurantPhotoItem.swift in Sources */,
 				D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */,
 				D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */,
 				D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */,
 				D225084229589D0900E6D9BA /* RestaurantItem.swift in Sources */,
 				D225083C295886E000E6D9BA /* LocationDataManager.swift in Sources */,
+				D20BCB5E29889F7A00244492 /* LetsEatModel.xcdatamodeld in Sources */,
 				D22508382958840100E6D9BA /* LocationViewController.swift in Sources */,
 				D2501754295B290300FB5818 /* NoDataView.swift in Sources */,
 				D22508582958D0D400E6D9BA /* RestaurantDetailTableViewController.swift in Sources */,
@@ -684,6 +712,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D20BCB5C29889F7A00244492 /* LetsEatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D20BCB5D29889F7A00244492 /* LetsEatModel.xcdatamodel */,
+			);
+			currentVersion = D20BCB5D29889F7A00244492 /* LetsEatModel.xcdatamodel */;
+			path = LetsEatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D21906FE2953C5B8004CE189 /* Project object */;
 }
