@@ -34,6 +34,17 @@ class RestaurantDetailTableViewController: UITableViewController {
         super.viewDidLoad()
         initialize()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier{
+            switch identifier{
+            case Segue.showDetail.rawValue:
+                showReview(segue: segue)
+            default:
+                print("Segue not added")
+            }
+        }
+    }
 
 }
 
@@ -47,6 +58,14 @@ private extension RestaurantDetailTableViewController {
     
     @IBAction func unwindReviewCancel(segue: UIStoryboardSegue){
         
+    }
+    
+    func showReview(segue: UIStoryboardSegue){
+        guard let navCont = segue.destination as? UINavigationController,
+              let viewController = navCont.topViewController as? ReviewFormViewController else{
+            return
+        }
+        viewController.selectedRestaurantID = selectedRestaurant?.restaurantID
     }
     
     func createRating(){
