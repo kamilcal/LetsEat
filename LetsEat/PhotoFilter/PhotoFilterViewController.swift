@@ -34,6 +34,19 @@ private extension PhotoFilterViewController {
         checkSource()
     }
     
+    func saveSelectedPhoto(){
+        if let mainImage = self.photoImageView.image{
+            var restPhotoItem = RestaurantPhotoItem()
+            restPhotoItem.date = Date()
+            restPhotoItem.photo = mainImage.preparingThumbnail(of: CGSize(width: 100, height: 100))
+            if let selResID = selectedRestaurantID{
+                restPhotoItem.restaurantID = Int64(selResID)
+            }
+            CoreDataManager.shared.addPhoto(restPhotoItem)
+        }
+        dismiss(animated: true)
+    }
+    
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -74,6 +87,10 @@ private extension PhotoFilterViewController {
     
     @IBAction func photoTapped(_ sender: Any){
         checkSource()
+    }
+    
+    @IBAction func saveTapped(_ sender: Any){
+        saveSelectedPhoto()
     }
 }
 
