@@ -11,8 +11,10 @@ class NoDataView: UIView {
 
     var view: UIView!
     
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var descLabel: UILabel!
+    
+    @IBOutlet var decriptionLabel: UILabel!
+    @IBOutlet var noDataTitleLabel: UILabel!
+    
     
     override init(frame: CGRect) {
         super .init(frame: frame)
@@ -40,7 +42,7 @@ class NoDataView: UIView {
     }
     
     func set(title: String, desc: String) {
-        titleLabel.text = title
-        descLabel.text = desc
+        noDataTitleLabel.text = title
+        decriptionLabel.text = desc
     }
 }

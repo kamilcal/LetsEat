@@ -18,12 +18,9 @@ struct CoreDataManager{
             }
         }
     }
-}
-
-extension CoreDataManager{
-    static var shared = CoreDataManager()
-
-//    MARK: - add
+    
+    
+    //    MARK: - add
     func addReview(_ reviewItem: ReviewItem){
         let review = Review(context: conteiner.viewContext)
         review.date = Date()
@@ -51,7 +48,7 @@ extension CoreDataManager{
         save()
     }
     
-//    MARK: - fetch
+    //    MARK: - fetch
     
     func fetchReviews(by identifier: Int) -> [ReviewItem] {
         let moc = conteiner.viewContext
@@ -87,7 +84,7 @@ extension CoreDataManager{
         }
     }
     
-//    MARK: - save
+    //    MARK: - save
     private func save(){
         do {
             if conteiner.viewContext.hasChanges{

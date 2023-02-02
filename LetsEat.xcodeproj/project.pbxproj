@@ -63,6 +63,9 @@
 		D2501756295B295A00FB5818 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2501755295B295A00FB5818 /* NoDataView.xib */; };
 		D2A71C3E2985D2E20007E158 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A71C3D2985D2E20007E158 /* RatingsView.swift */; };
 		D2D5AF292989A2C100C54FB2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5AF282989A2C100C54FB2 /* CoreDataManager.swift */; };
+		D2D5AF2C2989F0FF00C54FB2 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5AF2B2989F0FF00C54FB2 /* ReviewCell.swift */; };
+		D2D5AF2E2989F40900C54FB2 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5AF2D2989F40900C54FB2 /* ReviewsViewController.swift */; };
+		D2D5AF322989F4B600C54FB2 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5AF312989F4B600C54FB2 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +127,9 @@
 		D2501755295B295A00FB5818 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		D2A71C3D2985D2E20007E158 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		D2D5AF282989A2C100C54FB2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D2D5AF2B2989F0FF00C54FB2 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		D2D5AF2D2989F40900C54FB2 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		D2D5AF312989F4B600C54FB2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,8 @@
 		D21907082953C5B8004CE189 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				D2D5AF2F2989F4A000C54FB2 /* Utils */,
+				D2D5AF2A2989F0CD00C54FB2 /* Reviews */,
 				D21907092953C5B8004CE189 /* AppDelegate.swift */,
 				D219070B2953C5B8004CE189 /* SceneDelegate.swift */,
 				D219070F2953C5B8004CE189 /* Main.storyboard */,
@@ -377,6 +385,31 @@
 			path = "No Data";
 			sourceTree = "<group>";
 		};
+		D2D5AF2A2989F0CD00C54FB2 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5AF2B2989F0FF00C54FB2 /* ReviewCell.swift */,
+				D2D5AF2D2989F40900C54FB2 /* ReviewsViewController.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		D2D5AF2F2989F4A000C54FB2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5AF302989F4A600C54FB2 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D2D5AF302989F4A600C54FB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5AF312989F4B600C54FB2 /* DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +510,7 @@
 				D22508472958A78B00E6D9BA /* DataManager.swift in Sources */,
 				D20BCB5A29883D9A00244492 /* PhotoFilterViewController.swift in Sources */,
 				D20BCB5829883C7600244492 /* FilterCell.swift in Sources */,
+				D2D5AF2E2989F40900C54FB2 /* ReviewsViewController.swift in Sources */,
 				D20BCB5629883C4700244492 /* ImageFiltering.swift in Sources */,
 				D22508442958A0E800E6D9BA /* MapDataManager.swift in Sources */,
 				D219070A2953C5B8004CE189 /* AppDelegate.swift in Sources */,
@@ -493,12 +527,14 @@
 				D225083029586F0000E6D9BA /* ExploreDataManager.swift in Sources */,
 				D20BCB632988A89900244492 /* RestaurantPhotoItem.swift in Sources */,
 				D20BCB5229883B8A00244492 /* FilterItem.swift in Sources */,
+				D2D5AF322989F4B600C54FB2 /* DateFormatter.swift in Sources */,
 				D22508332958774B00E6D9BA /* ExploreCell.swift in Sources */,
 				D203593C2987069100008FCB /* ReviewFormViewController.swift in Sources */,
 				D225084229589D0900E6D9BA /* RestaurantItem.swift in Sources */,
 				D225083C295886E000E6D9BA /* LocationDataManager.swift in Sources */,
 				D20BCB5E29889F7A00244492 /* LetsEatModel.xcdatamodeld in Sources */,
 				D22508382958840100E6D9BA /* LocationViewController.swift in Sources */,
+				D2D5AF2C2989F0FF00C54FB2 /* ReviewCell.swift in Sources */,
 				D2501754295B290300FB5818 /* NoDataView.swift in Sources */,
 				D22508582958D0D400E6D9BA /* RestaurantDetailTableViewController.swift in Sources */,
 			);
