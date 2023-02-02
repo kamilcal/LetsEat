@@ -590,16 +590,16 @@
             </objects>
             <point key="canvasLocation" x="4243.2558139534885" y="214.37768240343348"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="OuK-dn-K2Q">
             <objects>
-                <viewController id="Kqe-22-GEj" sceneMemberID="viewController">
+                <viewController id="Kqe-22-GEj" customClass="PhotosViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JkL-eZ-cdT">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="214"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pkx-1f-9vB">
-                                <rect key="frame" x="0.0" y="59" width="430" height="155"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="214"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NQg-Zn-vm9">
                                     <size key="itemSize" width="200" height="200"/>
@@ -608,7 +608,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="photoCell" id="4IM-LY-HG0">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="photoCell" id="4IM-LY-HG0" customClass="PhotosCell" customModule="LetsEat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YQh-qH-zwf">
@@ -619,41 +619,53 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JIw-dR-3LW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                            <rect key="frame" x="20" y="0.0" width="160" height="200"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="JIw-dR-3LW" firstAttribute="leading" secondItem="6Hp-sB-Lo4" secondAttribute="leading" id="1al-5W-R7J"/>
-                                                        <constraint firstAttribute="bottom" secondItem="JIw-dR-3LW" secondAttribute="bottom" id="Q8Y-T9-5v6"/>
-                                                        <constraint firstItem="JIw-dR-3LW" firstAttribute="top" secondItem="6Hp-sB-Lo4" secondAttribute="top" id="kVA-C8-Edw"/>
-                                                        <constraint firstAttribute="trailing" secondItem="JIw-dR-3LW" secondAttribute="trailing" id="oCA-h0-NHK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JIw-dR-3LW" secondAttribute="bottom" id="1e3-Mv-Oyt"/>
+                                                        <constraint firstItem="JIw-dR-3LW" firstAttribute="leading" secondItem="6Hp-sB-Lo4" secondAttribute="leading" constant="20" symbolic="YES" id="NbT-jM-4jE"/>
+                                                        <constraint firstAttribute="width" constant="200" id="bY4-U8-p0A"/>
+                                                        <constraint firstAttribute="height" constant="200" id="eRZ-CM-HT6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JIw-dR-3LW" secondAttribute="trailing" constant="20" symbolic="YES" id="kXB-Ad-nq0"/>
+                                                        <constraint firstItem="JIw-dR-3LW" firstAttribute="top" secondItem="6Hp-sB-Lo4" secondAttribute="top" id="xTt-em-ImK"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="6Hp-sB-Lo4" secondAttribute="trailing" id="IMA-UI-mSP"/>
-                                                <constraint firstItem="6Hp-sB-Lo4" firstAttribute="leading" secondItem="YQh-qH-zwf" secondAttribute="leading" id="c3f-Sb-Twe"/>
-                                                <constraint firstItem="6Hp-sB-Lo4" firstAttribute="top" secondItem="YQh-qH-zwf" secondAttribute="top" id="efi-US-fiZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="6Hp-sB-Lo4" secondAttribute="bottom" id="tP8-Yp-Zdc"/>
+                                                <constraint firstItem="6Hp-sB-Lo4" firstAttribute="top" secondItem="YQh-qH-zwf" secondAttribute="top" id="auH-SB-IWM"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Hp-sB-Lo4" secondAttribute="bottom" id="ete-Pd-WKY"/>
+                                                <constraint firstItem="6Hp-sB-Lo4" firstAttribute="leading" secondItem="YQh-qH-zwf" secondAttribute="leading" id="vzd-Oa-Nz9"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Hp-sB-Lo4" secondAttribute="trailing" id="wAn-nx-ZIA"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="JIw-dR-3LW" id="GLX-3K-vE0"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kqe-22-GEj" id="ZU7-3f-dRb"/>
+                                    <outlet property="delegate" destination="Kqe-22-GEj" id="kST-mh-ySf"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z3F-Su-FQe"/>
                         <constraints>
-                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="leading" secondItem="Z3F-Su-FQe" secondAttribute="leading" id="MOd-M3-F7a"/>
-                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="bottom" secondItem="Z3F-Su-FQe" secondAttribute="bottom" id="cge-gC-2QX"/>
-                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="top" secondItem="Z3F-Su-FQe" secondAttribute="top" id="pYq-ty-qc5"/>
-                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="trailing" secondItem="Z3F-Su-FQe" secondAttribute="trailing" id="tMK-Qs-0HU"/>
+                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="bottom" secondItem="Z3F-Su-FQe" secondAttribute="bottom" id="M9x-jr-1mJ"/>
+                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="top" secondItem="JkL-eZ-cdT" secondAttribute="top" id="YKO-gD-mJx"/>
+                            <constraint firstItem="Pkx-1f-9vB" firstAttribute="leading" secondItem="Z3F-Su-FQe" secondAttribute="leading" id="ign-rC-UG2"/>
+                            <constraint firstItem="Z3F-Su-FQe" firstAttribute="trailing" secondItem="Pkx-1f-9vB" secondAttribute="trailing" id="zZ5-nw-nH3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photosCollectionView" destination="Pkx-1f-9vB" id="vsH-SB-10W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcE-61-elL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4903" y="215"/>
+            <point key="canvasLocation" x="4900.4651162790697" y="214.37768240343348"/>
         </scene>
         <!--PhotoFilter-->
         <scene sceneID="10V-97-DCA">
