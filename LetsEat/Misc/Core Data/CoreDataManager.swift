@@ -50,6 +50,12 @@ struct CoreDataManager{
     
     //    MARK: - fetch
     
+    func fetchRestaurantRating(by identifier: Int) -> Double{
+        let reviewItems = fetchReviews(by: identifier)
+        let sum = reviewItems.reduce(0, {$0 + ($1.rating ?? 0)})
+        return sum / Double(reviewItems.count)
+    }
+    
     func fetchReviews(by identifier: Int) -> [ReviewItem] {
         let moc = conteiner.viewContext
         let request = Review.fetchRequest()

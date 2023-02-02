@@ -83,9 +83,20 @@ private extension RestaurantDetailTableViewController {
     }
     
     func createRating(){
-        ratingsView.rating = 3.5
-        ratingsView.isEnabled = true
+        ratingsView.isEnabled = false
+        if let restaurantID = selectedRestaurant?.restaurantID{
+            let ratingValue = CoreDataManager.shared.fetchRestaurantRating(by: restaurantID)
+            ratingsView.rating = ratingValue
+            if ratingValue.isNaN{
+                overralRatingLabel.text = "0.0"
+            } else {
+                let roundValue = ((ratingValue * 10).rounded() / 10)
+                overralRatingLabel.text = "\(roundValue)"
+            }
+        }
     }
+    
+
     func setupLabels(){
         guard let restaurant = selectedRestaurant else { return }
         title = restaurant.name
