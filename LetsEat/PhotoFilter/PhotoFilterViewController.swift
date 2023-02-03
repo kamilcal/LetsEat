@@ -19,14 +19,16 @@ class PhotoFilterViewController: UIViewController {
     private var thumbnail: UIImage?
     private var filters: [FilterItem] = []
     
+//MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
     }
     
 }
+//MARK: - setupUI
 
-// MARK: - Private Extension
 private extension PhotoFilterViewController {
     
     func initialize() {
@@ -94,6 +96,8 @@ private extension PhotoFilterViewController {
     }
 }
 
+//MARK: - Delegate - DataSource Methods
+
 extension PhotoFilterViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -124,12 +128,12 @@ extension PhotoFilterViewController: UIImagePickerControllerDelegate, UINavigati
     func showCameraUserInterface() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        #if targetEnvironment(simulator)
+#if targetEnvironment(simulator)
         imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-        #else
+#else
         imagePicker.sourceType = UIImagePickerController.SourceType.camera
         imagePicker.showsCameraControls = true
-        #endif
+#endif
         imagePicker.mediaTypes = ["public.image"]
         imagePicker.allowsEditing = true
         self.present(imagePicker, animated: true, completion: nil)

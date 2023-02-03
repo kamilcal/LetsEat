@@ -26,10 +26,9 @@ class RestaurantDetailTableViewController: UITableViewController {
     // Cell Nine
     @IBOutlet var locationMapImageView: UIImageView!
     
-    
-    
     var selectedRestaurant: RestaurantItem?
-        
+//MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
@@ -39,6 +38,7 @@ class RestaurantDetailTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         createRating()
     }
+//MARK: - Action
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
@@ -52,8 +52,9 @@ class RestaurantDetailTableViewController: UITableViewController {
             }
         }
     }
-
+    
 }
+//MARK: - setupUI
 
 private extension RestaurantDetailTableViewController {
     
@@ -96,7 +97,7 @@ private extension RestaurantDetailTableViewController {
         }
     }
     
-
+    
     func setupLabels(){
         guard let restaurant = selectedRestaurant else { return }
         title = restaurant.name

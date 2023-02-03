@@ -17,22 +17,11 @@ class RestaurantListViewController: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet var collectionView: UICollectionView!
     
+//MARK: - Lifecycle Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
      }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier{
-            switch identifier {
-            case Segue.showDetail.rawValue:
-                showRestaurantDetail(segue: segue)
-            default:
-                print("Segue not added")
-            }
-        }
-    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -40,11 +29,21 @@ class RestaurantListViewController: UIViewController, UICollectionViewDelegate {
         setupTitle()
         }
     
-    
-    
+//MARK: - Action
+
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let identifier = segue.identifier{
+                switch identifier {
+                case Segue.showDetail.rawValue:
+                    showRestaurantDetail(segue: segue)
+                default:
+                    print("Segue not added")
+                }
+            }
+        }
 }
 
-//MARK: - Private Extension
+//MARK: - setupUI
 
 private extension RestaurantListViewController {
     
@@ -82,7 +81,7 @@ private extension RestaurantListViewController {
     }
 }
 
-//MARK: - UICollectionViewDataSource
+//MARK: - Delegate - DataSource Methods
 
 extension RestaurantListViewController: UICollectionViewDataSource {
     

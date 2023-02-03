@@ -8,17 +8,19 @@
 import UIKit
 
 class ReviewsViewController: UIViewController {
-
+    
     
     @IBOutlet var reviewscollectionView: UICollectionView!
     
     var selectedRestaurantID: Int?
     private var reviewItems: [ReviewItem] = []
     private var dateFormatter: DateFormatter = {
-       let formatter = DateFormatter()
-       formatter.dateFormat = "MMM dd, yyyy"
-       return formatter
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        return formatter
     }()
+    
+//MARK: - Lifecycle Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,7 @@ class ReviewsViewController: UIViewController {
     }
     
 }
+//MARK: - setup
 
 extension ReviewsViewController{
     
@@ -66,6 +69,7 @@ extension ReviewsViewController{
         reviewscollectionView.reloadData()
     }
 }
+//MARK: - Delegate - DataSource Methods
 
 extension ReviewsViewController: UICollectionViewDataSource{
     

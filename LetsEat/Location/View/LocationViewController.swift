@@ -13,11 +13,15 @@ class LocationViewController: UIViewController {
     let manager = LocationDataManager()
     var selectedCity: LocationItem?
     
+//MARK: - Lifecycle Functions
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
     }
-    
+
+//MARK: - Action
+
     private func setCheckmark(for cell: UITableViewCell, location: LocationItem) {
         if selectedCity == location{
             cell.accessoryType = .checkmark
@@ -28,14 +32,14 @@ class LocationViewController: UIViewController {
     
 }
 
-//MARK: - Private Extension
+//MARK: - setupUI
 
 private extension LocationViewController {
     func initialize() {
         manager.fetch()
     }
 }
-//MARK: - UICollectionViewDataSource
+//MARK: - Delegate - DataSource Methods
 
 extension LocationViewController: UITableViewDataSource {
     
@@ -51,8 +55,6 @@ extension LocationViewController: UITableViewDataSource {
         return cell
     }
 }
-
-//MARK: - UIT
 
 extension LocationViewController: UITableViewDelegate{
     

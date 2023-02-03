@@ -15,11 +15,15 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate {
     var selectedCity: LocationItem?
     var headerView: ExploreHeaderView!
  
+    //MARK: - Lifecycle Functions
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
     }
     
+    //MARK: - Action
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier! {
         case Segue.locationList.rawValue :
@@ -41,7 +45,7 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate {
     }
 }
 
-// MARK: - Private Extension
+//MARK: - setupUI
 
 private extension ExploreViewController{
     func initialize() {
@@ -91,7 +95,7 @@ private extension ExploreViewController{
     }
 }
 
-// MARK: - UICollectionViewDataSource
+//MARK: - Delegate - DataSource Methods
 
 extension ExploreViewController: UICollectionViewDataSource {
     

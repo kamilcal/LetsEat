@@ -8,12 +8,15 @@
 import UIKit
 
 class PhotosViewController: UIViewController {
-
+    
     @IBOutlet var photosCollectionView: UICollectionView!
     
     var restaurantPhotos: [RestaurantPhotoItem] = []
     var selectedRestaurantID:Int?
-
+    
+    
+//MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
@@ -23,6 +26,7 @@ class PhotosViewController: UIViewController {
         checkPhotos()
     }
 }
+//MARK: - setup
 
 private extension PhotosViewController{
     func initialize(){
@@ -57,6 +61,7 @@ private extension PhotosViewController{
         photosCollectionView.reloadData()
     }
 }
+//MARK: - Delegate - DataSource Methods
 
 extension PhotosViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

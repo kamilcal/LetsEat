@@ -21,7 +21,6 @@
 		D219070C2953C5B8004CE189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219070B2953C5B8004CE189 /* SceneDelegate.swift */; };
 		D21907112953C5B8004CE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D219070F2953C5B8004CE189 /* Main.storyboard */; };
 		D21907162953C5B9004CE189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21907142953C5B9004CE189 /* LaunchScreen.storyboard */; };
-		D21907202957974A004CE189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D219071F2957974A004CE189 /* Assets.xcassets */; };
 		D219072329579A4B004CE189 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219072229579A4B004CE189 /* ExploreViewController.swift */; };
 		D22508292957A2C900E6D9BA /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22508282957A2C900E6D9BA /* RestaurantListViewController.swift */; };
 		D225082C29586D9500E6D9BA /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D225082B29586D9500E6D9BA /* ExploreData.plist */; };
@@ -61,6 +60,7 @@
 		D2501751295B20AF00FB5818 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2501750295B20AF00FB5818 /* RestaurantCell.swift */; };
 		D2501754295B290300FB5818 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2501753295B290300FB5818 /* NoDataView.swift */; };
 		D2501756295B295A00FB5818 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2501755295B295A00FB5818 /* NoDataView.xib */; };
+		D2703BCE298D8FBE00FBBE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2703BCD298D8FBE00FBBE8F /* Assets.xcassets */; };
 		D2A50F90298C1191008509E4 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A50F8F298C1191008509E4 /* PhotosCell.swift */; };
 		D2A50F92298C11B9008509E4 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A50F91298C11B9008509E4 /* PhotosViewController.swift */; };
 		D2A71C3E2985D2E20007E158 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A71C3D2985D2E20007E158 /* RatingsView.swift */; };
@@ -86,7 +86,6 @@
 		D21907102953C5B8004CE189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D21907152953C5B9004CE189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D21907172953C5B9004CE189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D219071F2957974A004CE189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Clonelanan Projeler/iOS-15-Programming-for-Beginners-Sixth-Edition/Chapter09/Assets.xcassets"; sourceTree = "<group>"; };
 		D219072229579A4B004CE189 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		D22508282957A2C900E6D9BA /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		D225082B29586D9500E6D9BA /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
@@ -126,6 +125,7 @@
 		D2501750295B20AF00FB5818 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		D2501753295B290300FB5818 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		D2501755295B295A00FB5818 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
+		D2703BCD298D8FBE00FBBE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A50F8F298C1191008509E4 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		D2A50F91298C11B9008509E4 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		D2A71C3D2985D2E20007E158 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
@@ -192,14 +192,10 @@
 		D21907082953C5B8004CE189 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				D219070F2953C5B8004CE189 /* Main.storyboard */,
+				D2703BCA298D8F4700FBBE8F /* App */,
 				D2A50F8E298C116C008509E4 /* Photos */,
 				D2D5AF2A2989F0CD00C54FB2 /* Reviews */,
-				D21907092953C5B8004CE189 /* AppDelegate.swift */,
-				D219070B2953C5B8004CE189 /* SceneDelegate.swift */,
-				D219070F2953C5B8004CE189 /* Main.storyboard */,
-				D21907142953C5B9004CE189 /* LaunchScreen.storyboard */,
-				D219071F2957974A004CE189 /* Assets.xcassets */,
-				D21907172953C5B9004CE189 /* Info.plist */,
 				D225084B2958C13600E6D9BA /* ReviewForm */,
 				D225084A2958C12400E6D9BA /* RestaurantDetail */,
 				D225084C2958C14400E6D9BA /* PhotoFilter */,
@@ -387,6 +383,18 @@
 			path = "No Data";
 			sourceTree = "<group>";
 		};
+		D2703BCA298D8F4700FBBE8F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D2703BCD298D8FBE00FBBE8F /* Assets.xcassets */,
+				D21907172953C5B9004CE189 /* Info.plist */,
+				D21907142953C5B9004CE189 /* LaunchScreen.storyboard */,
+				D219070B2953C5B8004CE189 /* SceneDelegate.swift */,
+				D21907092953C5B8004CE189 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		D2A50F8E298C116C008509E4 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,7 +481,6 @@
 				D250173F2959B90100FB5818 /* Portland.json in Resources */,
 				D25017432959B90100FB5818 /* Houston.json in Resources */,
 				D2501756295B295A00FB5818 /* NoDataView.xib in Resources */,
-				D21907202957974A004CE189 /* Assets.xcassets in Resources */,
 				D225083A295885B600E6D9BA /* Locations.plist in Resources */,
 				D250173C2959B90100FB5818 /* Miami.json in Resources */,
 				D250173A2959B90100FB5818 /* Boston.json in Resources */,
@@ -488,6 +495,7 @@
 				D250173E2959B90100FB5818 /* New Orleans.json in Resources */,
 				D25017462959B90100FB5818 /* San Francisco.json in Resources */,
 				D21907112953C5B8004CE189 /* Main.storyboard in Resources */,
+				D2703BCE298D8FBE00FBBE8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LetsEat/Info.plist;
+				INFOPLIST_FILE = LetsEat/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -707,7 +715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LetsEat/Info.plist;
+				INFOPLIST_FILE = LetsEat/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

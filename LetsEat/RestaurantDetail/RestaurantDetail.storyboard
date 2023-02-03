@@ -384,10 +384,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kv7-Iz-et5">
-                                        <rect key="frame" x="0.0" y="1051" width="430" height="44"/>
+                                        <rect key="frame" x="0.0" y="1051" width="430" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kv7-Iz-et5" id="HBn-hr-mKz">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQS-bL-0F2">
@@ -401,7 +401,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syM-kD-sxl">
-                                                    <rect key="frame" x="107" y="12" width="253" height="21"/>
+                                                    <rect key="frame" x="107" y="12" width="308" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ZO2-ne-hLb"/>
                                                     </constraints>
@@ -420,17 +420,17 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="M3y-ef-LmJ">
-                                        <rect key="frame" x="0.0" y="1095" width="430" height="217"/>
+                                        <rect key="frame" x="0.0" y="1094.6666679382324" width="430" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M3y-ef-LmJ" id="Ocm-MM-nuO">
                                             <rect key="frame" x="0.0" y="0.0" width="430" height="217"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-xs-IGC">
-                                                    <rect key="frame" x="17" y="4" width="341" height="208.5"/>
+                                                    <rect key="frame" x="17" y="4" width="396" height="208.66666666666666"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZM-l0-bwa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="341" height="208.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="396" height="208.66666666666666"/>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
@@ -453,14 +453,11 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wWr-Xd-wpA">
-                        <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="soV-Zu-HEK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="wWr-Xd-wpA"/>
                     <connections>
                         <outlet property="adressLabel" destination="syM-kD-sxl" id="XC2-vN-m51"/>
                         <outlet property="cuisineLabel" destination="d71-Eq-mMn" id="5Qw-Ak-bQL"/>
                         <outlet property="headerAdressLabel" destination="UYm-Ip-FZy" id="vNz-Ij-dXx"/>
-                        <outlet property="heartButton" destination="soV-Zu-HEK" id="LYS-tP-Gr1"/>
                         <outlet property="locationMapImageView" destination="eZM-l0-bwa" id="Kmd-JQ-3gw"/>
                         <outlet property="nameLabel" destination="6er-aK-n02" id="rhb-hM-dc3"/>
                         <outlet property="overralRatingLabel" destination="zON-CP-XRT" id="5uB-JV-vFc"/>
@@ -705,7 +702,6 @@
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="detail-logo" width="220" height="112"/>
-        <image name="heart-unselected" width="44" height="44"/>
         <image name="icon-calendar" width="16" height="16"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="time-bg" width="68" height="27"/>

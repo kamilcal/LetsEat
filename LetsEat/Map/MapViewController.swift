@@ -14,11 +14,15 @@ class MapViewController: UIViewController {
     private let manager = MapDataManager()
     var selectedRestaurant: RestaurantItem?
     
+//MARK: - Lifecycle Functions
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
     }
-    
+
+//MARK: - Action
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case Segue.showDetail.rawValue:
@@ -31,7 +35,7 @@ class MapViewController: UIViewController {
 }
    
 
-//MARK: - Private Extension
+//MARK: - setupUI
 
 private extension MapViewController {
     
@@ -54,7 +58,7 @@ private extension MapViewController {
     }
 }
 
-//MARK: - UICollectionViewDataSource
+//MARK: - Delegate Methods
 
 extension MapViewController: MKMapViewDelegate{
     
