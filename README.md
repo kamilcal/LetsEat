@@ -2,7 +2,7 @@
 
 ## General info
 
-LetsEat is a restaurant reservation app created with Swift and Xcode.
+This is an iOS app used to find restaurants based in either a map location or a given city and cuisine.
 
 
 This app has been created:
